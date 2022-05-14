@@ -1,52 +1,35 @@
-<!--Your HTML should have each of the following sections:
-   * Header
-   * Nav
-   * Aside (With a Heading)
-   * Section (With a Heading)
-   * Article (With a Heading) contained within the Section
-   * Headers contained within the Article
-   * Paragraph contained within the Article
--->
 <!DOCTYPE html>
 <html>
-        <head>
-            <meta charset="UTF-8">
-            <title>Easier-Layout</title>
-            <link rel="stylesheet" type="text/css" href="style.css">
-        </head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Easier-Layout</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
     <body>
-        <header class="base">
-            header
+        <header class="container">
+            <h1 class="header__title">header</h1>        
         </header>
 
-        <nav class="base">
-            nav
-        </nav>
-       
-        <section class="base">
-            section
-            <article>
-                article
-                <div>
-                    <header id="heading">
-                        h1, h2, h3
-                    </header>
-                    <p>p</p>
-                </div>
-            </article>
-        </section>
+        <nav class="container">
+            <div class="nav__title">nav</div>
+        </nav>        
 
-        <aside class="base">
-            aside
-        </aside>
-
-        <footer class="base">
-            footer
+        <main class="container row">          
+            <section class="hero col">
+                <h1 class="hero__title">section</h1>
+                <article class="hero__article">
+                    <h1 class="hero__title--light">article</h1>
+                    <p class="hero__text">h1, h2, h3</p>
+                    <p class="hero__text">p</p>
+                </article>
+            </section>
+            <aside class="sidebar col">
+                <h1 class="aside__title">aside</h1>
+            </aside>        
+        </main>
+        
+        <footer class="container">
+            <div class="footer__title">footer</div>          
         </footer>
-
     </body>
 </html>
-
-
-
-
